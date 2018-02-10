@@ -157,7 +157,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBody: {fileID: 1352781016}
-  mouseSensitivity: 3
 --- !u!81 &304032408
 AudioListener:
   m_ObjectHideFlags: 0
@@ -390,7 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 355c9d6044ab34791b93d6517097804d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 2
+  walkSpeed: 4
 --- !u!23 &1352781013
 MeshRenderer:
   m_ObjectHideFlags: 0
