@@ -16,6 +16,7 @@ public class OnClickReceive : MonoBehaviour {
 
     public void Clicked()
     {
+        print("Recieved!"); 
         lightSwitch.enabled = !lightSwitch.enabled;
         if(bulbBroken == false)
         {
