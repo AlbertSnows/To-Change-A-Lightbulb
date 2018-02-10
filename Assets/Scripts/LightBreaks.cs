@@ -8,10 +8,11 @@ public class LightBreaks : MonoBehaviour {
 	void Start () {
         fanLamp = GetComponent<Light>();
         StartCoroutine(BreakLightBulb());
-        fanLamp.enabled = false;
     }
     IEnumerator BreakLightBulb()
     {
-        yield return new WaitForSecondsRealtime(5); 
+        fanLamp.enabled = true; 
+        yield return new WaitForSecondsRealtime(5);
+        fanLamp.enabled = false; 
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ceiling_Fan_Actions : MonoBehaviour {
+public class TriggerStaircase : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,9 +13,4 @@ public class Ceiling_Fan_Actions : MonoBehaviour {
 	void Update () {
 		
 	}
-
-    public void BreakLightBulb()
-    {
-
-    }
 }
