@@ -179,7 +179,8 @@ public class Door : MonoBehaviour
 
             // Set 'FinalRotation' to 'FinalRot' when moving and to 'InitialRot' when moving back
             Quaternion FinalRotation = ((State == 0) ? FinalRot * RotationOffset : InitialRot * RotationOffset);
-
+            AudioSource doorOpen = this.GetComponent<AudioSource>();
+            doorOpen.Play(); 
             // Make the door/window rotate until it is fully opened/closed
             while (TimeProgression <= (1 / Speed))
             {
