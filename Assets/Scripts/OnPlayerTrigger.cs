@@ -10,7 +10,6 @@ public class OnPlayerTrigger : MonoBehaviour {
     {
         lightProperty = GetComponent<Light>();
         lightSource = this.gameObject;
-        //lightSource.SetActive(false); 
     }
 
     // Update is called once per frame
@@ -20,7 +19,7 @@ public class OnPlayerTrigger : MonoBehaviour {
 		}
 	}
 
-    public void True()
+    public void Trigger()
     {
         hasLightBlub = true; 
     }
