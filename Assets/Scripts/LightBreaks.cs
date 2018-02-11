@@ -16,17 +16,4 @@ public class LightBreaks : MonoBehaviour {
         fanLamp.enabled = false;
         BroadcastMessage("Appear"); 
     }
-
-    public void Clicked()
-    {
-        print("Recieved!");
-        if (gotItem == false)
-        {
-            GameObject BrokenLightBulb = GameObject.Find("LightSource");
-            Light BLBProperty = BrokenLightBulb.GetComponent<Light>();
-            BLBProperty.enabled = true; 
-        }
-        gotItem = true;
-
-    }
 }

@@ -5,16 +5,23 @@ using UnityEngine;
 public class OnPlayerTrigger : MonoBehaviour {
 	public GameObject lightSource;
     public Light lightProperty;
-
+    bool hasLightBlub = false; 
     void Start()
     {
         lightProperty = GetComponent<Light>();
+        lightSource = this.gameObject;
+        //lightSource.SetActive(false); 
     }
 
     // Update is called once per frame
     void Update () {
-		if(Input.GetButtonDown("Fire1")){
+		if(Input.GetButtonDown("Fire1")&&hasLightBlub==true){
 		lightProperty.enabled = !lightProperty.enabled; 
 		}
 	}
+
+    public void True()
+    {
+        hasLightBlub = true; 
+    }
 }
