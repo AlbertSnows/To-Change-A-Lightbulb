@@ -14,7 +14,7 @@ public class OnClickReceive : MonoBehaviour {
 
     public void Clicked()
     {
-        print("Recieved!"); 
+        //print("Recieved!"); 
         if(bulbBroken == false)
         {
             GameObject Ceiling_Fan = GameObject.Find("Ceiling_Fan");
