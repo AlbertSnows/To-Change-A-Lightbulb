@@ -3,16 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LightBreaks : MonoBehaviour {
-    Light fanLamp; 
+    Light fanLamp;
+    bool gotItem = false; 
 	// Use this for initialization
 	void Start () {
         fanLamp = GetComponent<Light>();
-        StartCoroutine(BreakLightBulb());
     }
     IEnumerator BreakLightBulb()
     {
         fanLamp.enabled = true; 
         yield return new WaitForSecondsRealtime(5);
-        fanLamp.enabled = false; 
+        fanLamp.enabled = false;
+        BroadcastMessage("Appear"); 
+    }
+
+    public void Clicked()
+    {
+        print("Recieved!");
+        if (gotItem == false)
+        {
+            GameObject BrokenLightBulb = GameObject.Find("LightSource");
+            Light BLBProperty = BrokenLightBulb.GetComponent<Light>();
+            BLBProperty.enabled = true; 
+        }
+        gotItem = true;
+
     }
 }
