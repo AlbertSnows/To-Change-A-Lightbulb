@@ -21,7 +21,9 @@ public class OnClickReceive : MonoBehaviour {
         if(bulbBroken == false)
         {
             GameObject Ceiling_Fan = GameObject.Find("Ceiling_Fan");
-            Ceiling_Fan.SendMessage("BreakLightBulb"); 
+            Ceiling_Fan.SendMessage("BreakLightBulb");
+            BroadcastMessage("Appear"); 
+
         }
         bulbBroken = true; 
 
