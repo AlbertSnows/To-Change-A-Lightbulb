@@ -1,3 +1,3 @@
 # To-Change-A-Lightbulb
-Last updated branch: 
-https://github.com/AlbertSnows/To-Change-A-Lightbulb/tree/level-design
+This branch SAYS it's stable but it's probably lying to you. 
+Good luck soldier.
